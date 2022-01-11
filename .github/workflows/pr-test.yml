@@ -20,6 +20,5 @@ jobs:
         with:
           directory: tests/terraform/runner/resources/plan_rotem
           log_level: DEBUG
-          framework: terraform_plan
           quiet: false
 
