@@ -13,6 +13,6 @@ jobs:
       - name: 'Test Plan (Checkov)'
         uses: bridgecrewio/checkov-action@master
         with:
-          directory: tests/terraform/runner/resources/plan_with_child_modules
+          directory: tests/terraform/runner/resources/plan_rotem
           log_level: DEBUG
 
