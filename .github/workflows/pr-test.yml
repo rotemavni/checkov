@@ -16,7 +16,8 @@ jobs:
 
       - name: Run Checkov action
         id: checkov
-        uses: bridgecrewio/checkov-action@2.0.680
+        uses: bridgecrewio/checkov-action@v12.1151.0
+
         with:
           directory: tests/terraform/runner/resources/plan_rotem
           log_level: DEBUG
