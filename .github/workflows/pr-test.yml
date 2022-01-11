@@ -12,7 +12,7 @@ jobs:
     name: checkov-action
     steps:
       - name: Checkout repo
-        uses: rotemavni/checkov@master
+        uses: actions/checkout@master
 
       - name: Run Checkov action
         id: checkov
