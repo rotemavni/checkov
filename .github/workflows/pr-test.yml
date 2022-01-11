@@ -7,10 +7,15 @@ on:
       - master
 
 jobs:
-  checkov:
+  checkov-job:
     runs-on: ubuntu-latest
+    name: checkov-action
     steps:
-      - name: 'Test Plan (Checkov)'
+      - name: Checkout repo
+        uses: actions/checkout@master
+
+      - name: Run Checkov action
+        id: checkov
         uses: bridgecrewio/checkov-action@master
         with:
           directory: tests/terraform/runner/resources/plan_rotem
